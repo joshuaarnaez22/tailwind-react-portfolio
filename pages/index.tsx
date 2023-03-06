@@ -17,6 +17,8 @@ import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import image from "../public/image.png";
 import { useState } from "react";
+import Card from "../components/Card";
+import Skills from "../components/Skills";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -72,7 +74,7 @@ export default function Home() {
             <AiFillFacebook />
             <AiFillTwitterSquare />
           </div>
-          <div className="relative mx-auto first-letter:mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden mb-20 md:h-96 md:w-96">
+          <div className="relative mx-auto first-letter:mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-64 overflow-hidden mb-20 md:h-96 md:w-96">
             <Image src={image} alt="image" fill object-fit="cover" />
           </div>
         </section>
@@ -89,70 +91,35 @@ export default function Home() {
               similique accusantium nemo autem
             </p>
           </div>
-          <div className="my-20 md:flex flex-wrap lg:flex justify-center gap-10">
-            <div className="shadow-lg text-center p-10 rounded-xl dark:bg-gray-600">
-              <Image src={code} alt="image" className="mx-auto" />
-              <h3 className="text-lg font-medium pt-8 pb-2 md:text-2xl dark:text-white">
-                Website
-              </h3>
-              <h4 className="py-4 text-teal-600 md:text-xl">
-                Language that i use
-              </h4>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                React/Nextjs
-              </p>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                Tailwindcss
-              </p>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                Prisma
-              </p>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                Nodejs
-              </p>
-            </div>
-            <div className="shadow-lg text-center p-10 rounded-xl dark:bg-gray-600">
-              <Image src={consulting} alt="image" className="mx-auto" />
-              <h3 className="text-lg font-medium pt-8 pb-2 md:text-2xl dark:text-white">
-                Website
-              </h3>
-              <h4 className="py-4 text-teal-600 md:text-xl">
-                Language that i use
-              </h4>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                React/Nextjs
-              </p>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                Tailwindcss
-              </p>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                Prisma
-              </p>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                Nodejs
-              </p>
-            </div>
-            <div className="shadow-lg text-center p-10 rounded-xl dark:bg-gray-600">
-              <Image src={design} alt="image" className="mx-auto" />
-              <h3 className="text-lg font-medium pt-8 pb-2 md:text-2xl dark:text-white">
-                Website
-              </h3>
-              <h4 className="py-4 text-teal-600 md:text-xl">
-                Language that i use
-              </h4>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                React/Nextjs
-              </p>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                Tailwindcss
-              </p>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                Prisma
-              </p>
-              <p className="text-gray-600 py-1 md:text-lg dark:text-gray-300">
-                Nodejs
-              </p>
-            </div>
+          <div className="my-20  md:flex flex-wrap lg:flex justify-center gap-10">
+            <Skills
+              image={code}
+              header="Website"
+              subheader="Language that i use"
+            >
+              <p className="skillTag">React/Nextjs</p>
+              <p className="skillTag">Tailwindcss</p>
+              <p className="skillTag">Prisma</p>
+              <p className="skillTag">Nodejs</p>
+            </Skills>
+            <Skills
+              image={code}
+              header="Website"
+              subheader="Language that i use"
+            >
+              <p className="skillTag">Tailwindcss</p>
+              <p className="skillTag">Prisma</p>
+              <p className="skillTag">Nodejs</p>
+            </Skills>
+            <Skills
+              image={code}
+              header="Website"
+              subheader="Language that i use"
+            >
+              <p className="skillTag">Tailwindcss</p>
+              <p className="skillTag">Prisma</p>
+              <p className="skillTag">Nodejs</p>
+            </Skills>
           </div>
         </section>
         <section>
@@ -175,49 +142,13 @@ export default function Home() {
               voluptatum laborum
             </p>
           </div>
-          <div className="flex pb-20 flex-col gap-10 lg:flex-row flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                src={web1}
-                alt="image"
-                className=" rounded-lg object-cover"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web2}
-                alt="image"
-                className="rounded-lg object-cover"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web3}
-                alt="image"
-                className="mx-auto rounded-lg object-cover"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web4}
-                alt="image"
-                className="mx-auto rounded-lg object-cover"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web5}
-                alt="image"
-                className="mx-auto rounded-lg object-cover"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                src={web6}
-                alt="image"
-                className="mx-auto rounded-lg object-cover"
-              />
-            </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+            <Card image={web1} />
+            <Card image={web2} />
+            <Card image={web3} />
+            <Card image={web4} />
+            <Card image={web5} />
+            <Card image={web6} />
           </div>
         </section>
       </main>

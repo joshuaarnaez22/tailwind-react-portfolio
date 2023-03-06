@@ -23,3 +23,7 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+
+.skillTag {
+  @apply text-gray-600 py-1 md:text-lg dark:text-gray-300;
+}
