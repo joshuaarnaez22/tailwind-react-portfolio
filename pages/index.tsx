@@ -19,10 +19,7 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>
-          Innovative Impressions: Unleashing the Power of Creativity Through My
-          Portfolio
-        </title>
+        <title>Portfolio</title>
         <meta
           name="description"
           content="Discover a world of creativity and innovation through the lens of my portfolio. From captivating visuals to thought-provoking designs, explore a collection of my best work and witness the power of imagination brought to life."
