@@ -113,11 +113,12 @@ export default function Home() {
                   "Angular",
                   "Nextjs",
                 ].map((skill) => (
-                  <div key="skill">
-                    <li className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-sm uppercase tracking-wide">
-                      {skill}
-                    </li>
-                  </div>
+                  <li
+                    className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-sm uppercase tracking-wide"
+                    key={skill}
+                  >
+                    {skill}
+                  </li>
                 ))}
               </ul>
             </Skills>
@@ -132,11 +133,12 @@ export default function Home() {
                   "RESTful APIs",
                   "Git",
                 ].map((skill) => (
-                  <div key="skill">
-                    <li className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-sm uppercase tracking-wide">
-                      {skill}
-                    </li>
-                  </div>
+                  <li
+                    className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-sm uppercase tracking-wide"
+                    key={skill}
+                  >
+                    {skill}
+                  </li>
                 ))}
               </ul>
             </Skills>
