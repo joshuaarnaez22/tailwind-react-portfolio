@@ -33,14 +33,14 @@ export default function Home() {
             <h1 className="text-xl font-burtons dark:text-white md:px-10 lg:px-20">
               Developedbyjosh
             </h1>
-            <ul className="flex items-center">
-              <li>
+            <div className="flex items-center">
+              <div>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="dark:text-white cursor-pointer text-2xl"
                 />
-              </li>
-              <li>
+              </div>
+              <div>
                 <a
                   href="/joshua_arnaez.pdf"
                   download
@@ -48,8 +48,8 @@ export default function Home() {
                 >
                   Resume
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </nav>
           <div className="text-center p-10">
             <h2 className="text-5xl text-teal-500 font-medium md:text-6xl">
@@ -100,7 +100,7 @@ export default function Home() {
           </div>
           <div className="my-20  md:flex flex-wrap lg:flex justify-center gap-10">
             <Skills image={code} header="Front-end skills">
-              <ul className="flex flex-wrap justify-start gap-4">
+              <div className="flex flex-wrap justify-start gap-4">
                 {[
                   "HTML5",
                   "CSS",
@@ -113,17 +113,17 @@ export default function Home() {
                   "Angular",
                   "Nextjs",
                 ].map((skill) => (
-                  <li
+                  <div
                     className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-sm uppercase tracking-wide"
                     key={skill}
                   >
                     {skill}
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </Skills>
             <Skills image={code} header="Back-end skills">
-              <ul className="flex flex-wrap justify-start gap-4">
+              <div className="flex flex-wrap justify-start gap-4">
                 {[
                   "Node.js",
                   "Express.js",
@@ -133,14 +133,14 @@ export default function Home() {
                   "RESTful APIs",
                   "Git",
                 ].map((skill) => (
-                  <li
+                  <div
                     className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-sm uppercase tracking-wide"
                     key={skill}
                   >
                     {skill}
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </Skills>
           </div>
         </section>

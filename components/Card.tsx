@@ -10,16 +10,16 @@ const Card = ({ image, techs, link }: any) => {
         <div className="bg-gray-100 py-4 ">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-4">Tech Used</h2>
-            <ul className="flex flex-wrap justify-start gap-4 ">
+            <div className="flex flex-wrap justify-start gap-4 ">
               {techs &&
                 techs.map((tech: string, index: number) => (
                   <div key={index}>
-                    <li className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-sm uppercase tracking-wide">
+                    <div className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full text-sm uppercase tracking-wide">
                       {tech}
-                    </li>
+                    </div>
                   </div>
                 ))}
-            </ul>
+            </div>
           </div>
         </div>
       </Link>
